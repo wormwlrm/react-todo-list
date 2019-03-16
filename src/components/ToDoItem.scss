@@ -1,0 +1,31 @@
+.todo-item {
+  background-color: white;
+  cursor: pointer;
+
+  .todo-item-delete-button {
+    position: absolute;
+    top: 0.75rem;
+    left: 1rem;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .todo-item-value {
+    padding-left: 2.25rem;
+  }
+
+  &.checked {
+    text-decoration: line-through;
+    color: #adb5bd;
+  }
+
+  &:hover {
+    background-color: #80808017;
+
+    .todo-item-delete-button {
+      opacity: 1;
+      transition: 0.2s;
+      color: black;
+    }
+  }
+}
